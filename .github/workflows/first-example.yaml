@@ -9,11 +9,17 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v4
         
-            - name: Welcome
-              run: echo "welcome to this super github action"
+            - name: List and Read File
+              run: |
+                echo "welcome to this super github action"
+                ls -ltra
+                cat README.md
             
-            - name: List Files
-              run: ls
+            - name: Generate ASCII Artwork
+              run: cowsay -f dragon "Run for cover, I am a Dragon....." >> dragon.txt
             
-            - name: Read File
-              run: cat README.md
+            #- name: List Files
+            #  run: ls
+            
+            #- name: Read File
+            #  run: cat README.md
