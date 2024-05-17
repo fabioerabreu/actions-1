@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v3.6.0
+        
             - name: Welcome
               run: echo "welcome to this super github action"
             
