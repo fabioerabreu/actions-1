@@ -27,7 +27,7 @@ jobs:
           run: sleep 10
         
         - name: Download Dragon
-          uses: action/download-artifact@v3
+          uses: actions/download-artifact@v3
           with:
             name: dragon-artifact
         
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Dragon
-        uses: action/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: dragon-artifact
 
